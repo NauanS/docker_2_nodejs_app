@@ -12,7 +12,7 @@ RUN apk update \
  && npm install express -g \
  && npm install express \
  && npm install pm2 -g \
- && npm install knex@0.20.9 -g \
- && npm install knex@0.20.9
+ && npm install knex -g \
+ && npm install knex
 
 COPY ./backend ./x
