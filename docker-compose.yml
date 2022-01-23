@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  authentication:
+    build:
+      context: .
+      dockerfile: backend.Dockerfile
+    container_name: ${backend_app_container_name}

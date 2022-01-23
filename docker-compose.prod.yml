@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  authentication:
+    command: npm start
+    ports: 
+      - ${backend_app_port}
+    volumes:
+      - ${backend_app_dir}
+      - ${backend_app_dir_node_modules}

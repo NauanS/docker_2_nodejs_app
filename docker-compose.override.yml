@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  authentication:
+    command: npm run dev
+    ports: 
+      - ${backend_app_port}
+    volumes:
+      - ${backend_app_dir}
+      - ${backend_app_dir_node_modules}
+    environment:
+      - NODE_ENV=development
+
+networks:
+  default:
+    external:
+      name: development_environment
