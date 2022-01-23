@@ -1,6 +1,7 @@
 #!/bin/bash
 read -p "Give the url of the  repository: " urlOriginRepoBack
 git clone $urlOriginRepoBack backend
+cd backend
 git remote -v
 cd ..
 
